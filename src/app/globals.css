@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.dark {
+  /* CAFFENE DARK MODE */
+  --bg: #111111;
+  --bg-card: #191919;
+  --bg-button: #111111;
+  --bg-button-hover: #2A2A2A;
+  --border: #201e18;
+  --input: #484848;
+  --text-bold: #eeeeee;
+  --text: #b4b4b4;
+  --nav-selected: : #393028;
+}
+
+.light {
+  --bg: #f9f9f9;
+  --bg-card: #ffffff;
+  --bg-button: #f9f9f9;
+  --bg-button-hover: #E8E8E8;
+  --border: #d8d8d8;
+  --input: #d8d8d8;
+  --text-bold: #202020;
+  --text: #646464;
+  --nav-selected: : #ffdfb5;
+}
+
+.special {
+  /* KODAMA GROVE Light Mode */
+  --bg: #e4d7b0;
+  --bg-card: #e7dbbf;
+  --bg-button: #e4d7b0;
+  --bg-button-hover: #d9c693;
+  --border: #b19681;
+  --input: #dbc894;
+  --text-bold: #5c4b3e;
+  --text: #85766a;
+  --nav-selected: : #decea0;
 }
