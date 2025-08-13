@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { distance } from "motion";
 import { Button } from "./ui/button";
+import AboutMe from "./AboutMe";
+import Skills from "./skills";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -120,18 +122,19 @@ export default function HorizontalScroll() {
         >
             <section className="panel w-full h-full flex justify-center items-center">
                 {/* give the inner container the class "card" (selector used above) */}
-                <div className="card bg-[var(--bg-card)] w-[80vw] h-[80vh] border-2 border-[var(--my-border)] text-[var(--text)]">
-                    Card 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eos quaerat perspiciatis sed neque enim aliquid vel doloribus veniam qui aperiam iure asperiores amet est, exercitationem laudantium unde? Aspernatur ipsum illo quae doloremque, animi repudiandae quidem inventore, numquam iusto eius cupiditate at quod voluptatum obcaecati aperiam! Nemo inventore sit blanditiis ea alias, aliquid ratione esse architecto at. Architecto illo, est expedita numquam suscipit iusto impedit eum nisi reprehenderit ipsam nobis tempore, cum voluptatum repellat deleniti enim deserunt quidem earum, perspiciatis alias! Officia ex animi aliquam nesciunt asperiores et quia impedit, voluptatem, amet fugiat vitae omnis ipsa exercitationem, iste obcaecati quam iure eaque odio culpa aliquid tempore nihil beatae deleniti corporis. Possimus deserunt tempora, nostrum est dicta distinctio ducimus accusamus laborum numquam nemo voluptatum omnis consequuntur sequi voluptatem voluptate quidem odit ex tenetur iusto temporibus consectetur nihil soluta quam. Itaque, facilis enim. Odit dolorem vero in repellat provident officia obcaecati accusamus impedit quo ratione neque ad velit quisquam quaerat itaque laborum, ducimus cum! Ad iusto nobis doloribus molestiae nam iure. Id magni consequuntur accusantium eos assumenda doloribus aliquam quibusdam ad? Atque doloribus qui minus aut cumque pariatur quaerat incidunt, expedita perferendis quos officiis corrupti ipsa perspiciatis neque veniam adipisci beatae. Unde similique quo tempore debitis sit eaque voluptates itaque eius vitae beatae ea molestiae accusantium ullam nesciunt, sint cumque quaerat. Deserunt eos saepe odit iusto placeat. Fugit amet magni autem expedita iste aut voluptates molestias maxime ut rerum consequatur eveniet illo eius veritatis corporis omnis repudiandae, ipsa fuga! Earum impedit illum quisquam vero, fugiat eveniet molestiae nihil, soluta fuga dolorem cum consequatur fugit corrupti deserunt. Nulla totam nisi itaque, quaerat, obcaecati animi ut, eligendi excepturi labore consectetur quae repudiandae eum? Animi, eius dolorem optio amet velit culpa delectus non quidem. Dicta ipsa eaque temporibus accusamus magni cupiditate possimus sed eius repellat. Ad blanditiis iure suscipit autem sunt sint, facere nemo ipsum praesentium. Impedit provident molestias consectetur necessitatibus unde obcaecati repellat ex enim nam est?
-                    <br></br> <Button className="bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] hover:bg-[var(--bg-button-hover)] cursor-pointer">Hello</Button>
+                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                    <AboutMe />
+                </div>
+            </section>
+
+            <section className="panel w-full h-full flex justify-center items-center" id="projects">
+                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                    <Skills/>
                 </div>
             </section>
 
             <section className="panel w-full h-full flex justify-center items-center">
-                <div className="card bg-blue-400 w-[80vw] h-[80vh]">Card 2</div>
-            </section>
-
-            <section className="panel w-full h-full flex justify-center items-center">
-                <div className="card bg-green-400 w-[80vw] h-[80vh]">Card 3</div>
+                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">Card 3</div>
             </section>
         </div>
     );
