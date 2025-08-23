@@ -8,6 +8,7 @@ import { distance } from "motion";
 import { Button } from "./ui/button";
 import AboutMe from "./AboutMe";
 import Skills from "./skills";
+import Projects from "./Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,7 +119,7 @@ export default function HorizontalScroll() {
     return (
         <div
             ref={containerRef}
-            className="flex justify-center items-center h-screen w-[300vw] bg-[var(--bg)] overflow-hidden"
+            className="flex justify-center items-center h-screen w-[400vw] bg-[var(--bg)] overflow-hidden"
         >
             <section className="panel w-full h-full flex justify-center items-center">
                 {/* give the inner container the class "card" (selector used above) */}
@@ -129,12 +130,21 @@ export default function HorizontalScroll() {
 
             <section className="panel w-full h-full flex justify-center items-center" id="projects">
                 <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
-                    <Skills/>
+                    <Skills />
+
                 </div>
             </section>
 
             <section className="panel w-full h-full flex justify-center items-center">
-                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">Card 3</div>
+                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                    <Projects />
+                </div>
+            </section>
+
+            <section className="panel w-full h-full flex justify-center items-center">
+                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                    <Projects />
+                </div>
             </section>
         </div>
     );

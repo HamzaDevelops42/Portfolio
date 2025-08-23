@@ -169,7 +169,9 @@ export default function Skills() {
     return (
         <TooltipProvider >
             <div className="p-8">
-                <h1 className="text-center text-2xl mb-6 text-bold text-[var(--text-2)] -tracking-wide">Skills</h1>
+                <h3 className="text-xl uppercase tracking-widest mb-4 text-[var(--text-2)] -ms-1">
+                    Skills
+                </h3>
                 <div className="space-y-5 ">
 
                     {categories.map((cat) => (
@@ -190,7 +192,7 @@ export default function Skills() {
                                                         style={{
                                                             color: skill.color,
                                                         }}
-                                                        
+
                                                     >
                                                         {skill.icon}
                                                     </div>
@@ -198,7 +200,7 @@ export default function Skills() {
                                             </TooltipTrigger>
                                             <TooltipContent className=" bg-[var(--bg)] border border-[var(--my-border)] text-[var(--text)]">
                                                 <div className="text-sm font-semibold">{skill.name}</div>
-                                                <div className="text-xs "> 
+                                                <div className="text-xs ">
                                                     {skill.description}
                                                 </div>
                                             </TooltipContent>
