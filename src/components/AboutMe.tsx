@@ -2,8 +2,8 @@ import { section } from "motion/react-client";
 import Socials from "./Socials";
 import { FaCode, FaRegCalendarAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
-
-
+import Link from "next/link";
+import { toast } from "sonner";
 
 
 const birthday = new Date("2008-11-8"); // change to your actual birthday
@@ -39,7 +39,7 @@ export default function AboutMe() {
         <section className="bg-[var(--bg-card)] text-[var(--text)] p-8 rounded-lg flex gap-20">
             <div className="w-1/2">
                 {/* Section Title */}
-                <h3 className="text-sm uppercase tracking-widest mb-4 text-[var(--text)]">
+                <h3 className="text-sm uppercase tracking-widest mb-4  text-[var(--text-2)]">
                     About Me
                 </h3>
 
@@ -82,18 +82,19 @@ export default function AboutMe() {
 
                 {/* Buttons */}
                 <div className="mt-8 flex gap-4">
-                    <a
+                    <Link
                         href="#contact"
-                        className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[#332B25] transition-colors"
+                        onClick={() => {toast.success("Something went wrong. Try again!")}}
+                        className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[#332B25] transition-colors cursor-pointer"
                     >
                         Get in Touch
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="#projects"
-                        className="bg-[var(--bg-button)] text-[var(--text)] px-6 py-3 border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors"
+                        className="bg-[var(--bg-button)] text-[var(--text)] px-6 py-3 border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors cursor-pointer"
                     >
                         View Projects
-                    </a>
+                    </Link>
                 </div>
 
 

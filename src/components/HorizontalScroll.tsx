@@ -9,6 +9,8 @@ import { Button } from "./ui/button";
 import AboutMe from "./AboutMe";
 import Skills from "./skills";
 import Projects from "./Projects";
+import Contact from "./Contact";
+import { toast } from "sonner";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -143,7 +145,7 @@ export default function HorizontalScroll() {
 
             <section className="panel w-full h-full flex justify-center items-center">
                 <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
-                    <Projects />
+                    <Contact />
                 </div>
             </section>
         </div>

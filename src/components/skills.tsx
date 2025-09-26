@@ -169,14 +169,14 @@ export default function Skills() {
     return (
         <TooltipProvider >
             <div className="p-8">
-                <h3 className="text-xl uppercase tracking-widest mb-4 text-[var(--text-2)] -ms-1">
+                <h3 className="text-md uppercase tracking-widest mb-4 text-[var(--text-2)] ">
                     Skills
                 </h3>
                 <div className="space-y-5 ">
 
                     {categories.map((cat) => (
                         <div key={cat.key}>
-                            <h2 className="text-sm uppercase tracking-widest mb-4 text-[var(--text)]">{cat.label}</h2>
+                            <h2 className="text-sm  mb-2 text-[var(--text)]">{cat.label}</h2>
                             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
                                 {skills
                                     .filter((skill) => skill.category === cat.key)
