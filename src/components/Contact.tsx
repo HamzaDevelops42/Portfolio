@@ -77,8 +77,8 @@ export default function Contact() {
 
     return (
         <TooltipProvider>
-            <div className="flex flex-col p-6 space-y-6">
-                <h3 className="text-sm uppercase tracking-widest mb-4 text-[var(--text-2)]">
+            <div className="flex flex-col p-6 space-y-6 max-touch:justify-center max-touch:h-full max-touch:w-full">
+                <h3 className="text-sm uppercase tracking-widest mb-4 text-[var(--text-2)] max-touch:text-center">
                     Contact
                 </h3>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="px-20 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[#332B25] transition-colors cursor-pointer text-center mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-10 sm:px-20 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[#332B25] transition-colors cursor-pointer text-center mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {loading ? "Sending..." : "Send Message"}
                         </button>

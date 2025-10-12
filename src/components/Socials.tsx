@@ -36,7 +36,7 @@ export default function Social() {
 
     return (
         <TooltipProvider >
-            <div className="flex gap-4 py-20 pr-6 max-touch:hidden">
+            <div className="flex gap-4 py-20 pr-6 h-full max-touch:hidden">
                 {/* Left Sidebar Panel - Full Height */}
                 <Tooltip >
                     <TooltipTrigger asChild>
