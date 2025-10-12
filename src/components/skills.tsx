@@ -27,6 +27,7 @@ import {
     SiSanity,
     SiFramer,
     SiGreensock,
+    SiShadcnui 
 } from "react-icons/si";
 
 const skills = [
@@ -138,7 +139,7 @@ const skills = [
     {
         name: "ShadCN",
         category: "others",
-        icon: <SiFramer className="text-3xl" />,
+        icon: <SiShadcnui className="text-3xl"/>,
         color: "white",
         description: "UI components for React",
     },
@@ -154,7 +155,7 @@ const skills = [
         category: "others",
         icon: <SiGreensock className="text-3xl" />,
         color: "#88CE02",
-        description: "Professional-grade animation library",
+        description: "Animation library",
     },
 ];
 

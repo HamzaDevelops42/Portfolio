@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --breakpoint-touch: 1024px; /*  custom breakpoint to enable vertical scrolling on small and touchh devices */
+}
+
+
 .dark {
   /* CAFFENE DARK MODE */
   --bg: #111111;

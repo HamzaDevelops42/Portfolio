@@ -6,32 +6,34 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
+        title: "Watchly Backend",
+        description:
+            "A robust backend for a video-sharing platform like YouTube, featuring authentication, video uploads, comments, likes, subscriptions, and more. Designed with scalability and modular architecture in mind.",
+        image: "/projects/watchly.png",
+        tech: ["Node.js", "Express", "MongoDB", "Multer", "JWT", "Cloudinary"],
+        github: "https://github.com/HamzaDevelops42/Watchly-backend",
+        demo: null,
+    },
+    {
+        title: "Dusk Plate",
+        description:
+            "A modern restaurant website powered by Sanity CMS, allowing menu management and customer ordering through a predefined WhatsApp message flow. Built for easy deployment and customization.",
+        image: "/projects/duskplate.png",
+        tech: ["Next.js", "TypeScript", "Sanity", "TailwindCSS", "Context API"],
+        github: "https://github.com/HamzaDevelops42/dusk-plate",
+        demo: "https://duskplate.vercel.app/",
+    },
+    {
         title: "Portfolio Website",
         description:
-            "A personal portfolio built with Next.js, TailwindCSS, and GSAP animations.",
+            "A dynamic personal portfolio featuring smooth GSAP animations, horizontal scrolling, and modern UI components — built to showcase my projects, skills, and creativity.",
         image: "/projects/portfolio.png",
-        tech: ["Next.js", "TailwindCSS", "GSAP"],
-        github: "https://github.com/your-username/portfolio",
-        demo: "https://your-portfolio.vercel.app",
+        tech: ["Next.js", "TailwindCSS", "GSAP", "Framer Motion"],
+        github: "https://github.com/HamzaDevelops42/portfolio",
+        demo: "https://hamzadevelops.vercel.app",
     },
-    {
-        title: "E-Commerce App",
-        description:
-            "Full-stack MERN e-commerce application with payments and authentication.",
-        image: "/projects/ecommerce.png",
-        tech: ["React", "Node.js", "MongoDB"],
-        github: "https://github.com/your-username/ecommerce",
-        demo: "https://ecommerce-demo.vercel.app",
-    },
-    {
-        title: "Chat App",
-        description: "Real-time chat app using Socket.io and Express.",
-        image: "/projects/chat.png",
-        tech: ["React", "Express", "Socket.io"],
-        github: "https://github.com/your-username/chat-app",
-        demo: null, // No demo link
-    },
-];
+]
+
 
 export default function Projects() {
     return (

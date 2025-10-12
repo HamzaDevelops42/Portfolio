@@ -1,4 +1,3 @@
-import { section } from "motion/react-client";
 import Socials from "./Socials";
 import { FaCode, FaRegCalendarAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -100,7 +99,9 @@ export default function AboutMe() {
 
 
             </div>
+            
             <Socials />
+     
         </section>
     );
 }
