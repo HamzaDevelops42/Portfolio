@@ -9,7 +9,7 @@ const projects = [
         title: "Watchly Backend",
         description:
             "A robust backend for a video-sharing platform like YouTube, featuring authentication, video uploads, comments, likes, subscriptions, and more. Designed with scalability and modular architecture in mind.",
-        image: "/projects/watchly.png",
+        image: "/code.jpg",
         tech: ["Node.js", "Express", "MongoDB", "Multer", "JWT", "Cloudinary"],
         github: "https://github.com/HamzaDevelops42/Watchly-backend",
         demo: null,
@@ -18,7 +18,7 @@ const projects = [
         title: "Dusk Plate",
         description:
             "A modern restaurant website powered by Sanity CMS, allowing menu management and customer ordering through a predefined WhatsApp message flow. Built for easy deployment and customization.",
-        image: "/projects/duskplate.png",
+        image: "/duskplate.png",
         tech: ["Next.js", "TypeScript", "Sanity", "TailwindCSS", "Context API"],
         github: "https://github.com/HamzaDevelops42/dusk-plate",
         demo: "https://duskplate.vercel.app/",
@@ -27,7 +27,7 @@ const projects = [
         title: "Portfolio Website",
         description:
             "A dynamic personal portfolio featuring smooth GSAP animations, horizontal scrolling, and modern UI components — built to showcase my projects, skills, and creativity.",
-        image: "/projects/portfolio.png",
+        image: "/portfolio.png",
         tech: ["Next.js", "TailwindCSS", "GSAP", "Framer Motion"],
         github: "https://github.com/HamzaDevelops42/portfolio",
         demo: "https://hamzadevelops.vercel.app",
@@ -36,8 +36,13 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="flex flex-col max-sm:justify-center max-sm:items-center h-full overflow-y-auto p-6 space-y-6 scrollbar-thin scrollbar-thumb-[var(--my-border)] scrollbar-track-transparent">
-            <h3 className="text-sm uppercase tracking-widest mb-6 sm:mb-4 text-[var(--text-2)] text-center sm:text-left">
+        <div className="
+        bg-[var(--bg-card)] text-[var(--text)] 
+        border border-[var(--my-border)] rounded-lg
+        w-[90vw] h-[85vh] touch:w-[80vw] touch:h-[70vh] xl:w-[70vw] 2xl:w-[60vw]
+        
+        flex flex-col max-sm:justify-center max-sm:items-center  overflow-y-auto p-6 sm:p-8 space-y-6 scrollbar-thin scrollbar-thumb-[var(--my-border)] scrollbar-track-transparent">
+            <h3 className="text-sm uppercase tracking-widest mb-8 sm:mb-4 text-[var(--text-2)] text-center sm:text-left">
                 Projects
             </h3>
 
@@ -54,13 +59,17 @@ export default function Projects() {
                     >
                         {/* Image — hidden below 1024px (touch) */}
                         <div className="hidden touch:flex w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden border border-[var(--my-border)]">
-                            <Image
-                                src={p.image}
-                                alt={p.title}
-                                width={96}
-                                height={96}
-                                className="object-cover w-full h-full"
-                            />
+                            <div className="relative w-full h-full">
+                                <Image
+                                    src={p.image}
+                                    alt={p.title}
+                                    fill
+                                    quality={100} // better quality
+                                    className="object-cover scale-110" // zoom + align left
+                                    sizes="1000px" // ensures sharpness for small fixed image boxes
+                                    priority={i === 0} // optional: loads first project faster
+                                />
+                            </div>
                         </div>
 
                         {/* Content */}

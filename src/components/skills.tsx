@@ -59,9 +59,14 @@ const categories = [
 export default function Skills() {
     return (
         <TooltipProvider>
-            <div className="p-6 sm:p-8 h-full flex justify-center gap-6 items-center flex-col sm:block">
+            <div className="
+            bg-[var(--bg-card)] text-[var(--text)] 
+            border border-[var(--my-border)] rounded-lg
+            w-[90vw] h-[85vh] touch:w-[80vw] touch:h-[70vh] xl:w-[70vw] 2xl:w-[60vw]  
+            p-6 sm:p-8  flex justify-center gap-6 items-center flex-col sm:block">
+                
                 {/* Main Section Heading */}
-                <h3 className="text-md uppercase tracking-widest sm:mb-6 text-[var(--text-2)] text-center ">
+                <h3 className="text-md uppercase tracking-widest sm:mb-6 text-[var(--text-2)] text-center sm:text-left ">
                     Skills
                 </h3>
 

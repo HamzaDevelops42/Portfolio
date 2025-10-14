@@ -118,25 +118,25 @@ export default function HorizontalScroll() {
             className="touch:flex justify-center items-center h-screen w-[400vw] bg-[var(--bg)] overflow-hidden"
         >
             <section className="panel w-full h-full flex justify-center items-center">
-                <div className="card flex justify-center items-center bg-[var(--bg-card)] w-[50vw]  h-[60vh] max-touch:w-[90vw] max-touch:h-[85vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                <div className="card flex justify-center items-center h-full w-full">
                     <AboutMe />
                 </div>
             </section>
 
             <section className="panel w-full h-full flex justify-center items-center" id="projects">
-                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] max-touch:w-[90vw] max-touch:h-[85vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                <div className="card flex justify-center items-center h-full w-full">
                     <Skills />
                 </div>
             </section>
 
             <section className="panel w-full h-full flex justify-center items-center">
-                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] max-touch:w-[90vw] max-touch:h-[85vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                <div className="card flex justify-center items-center h-full w-full">
                     <Projects />
                 </div>
             </section>
 
             <section className="panel w-full h-full flex justify-center items-center">
-                <div className="card bg-[var(--bg-card)] w-[50vw] h-[60vh] max-touch:w-[90vw] max-touch:h-[85vh] border-2 border-[var(--my-border)] text-[var(--text)] rounded-3xl">
+                <div className="card flex justify-center items-center h-full w-full">
                     <Contact />
                 </div>
             </section>

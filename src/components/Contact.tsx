@@ -46,7 +46,7 @@ export default function Contact() {
                 toast.error("Something went wrong. Try again!")
             }
         } catch (err) {
-            toast.error(  "Failed to send message. Please try later.", )
+            toast.error("Failed to send message. Please try later.",)
         } finally {
             setLoading(false);
         }
@@ -77,8 +77,13 @@ export default function Contact() {
 
     return (
         <TooltipProvider>
-            <div className="flex flex-col p-6 space-y-6 max-touch:justify-center max-touch:h-full max-touch:w-full">
-                <h3 className="text-sm uppercase tracking-widest mb-4 text-[var(--text-2)] max-touch:text-center">
+            <div className="
+            bg-[var(--bg-card)] text-[var(--text)] 
+            border border-[var(--my-border)] rounded-lg
+            w-[90vw] h-[85vh] touch:w-[80vw] touch:h-[70vh] xl:w-[70vw] 2xl:w-[60vw]
+            
+            flex flex-col p-6 space-y-6 max-touch:justify-center">
+                <h3 className="text-sm uppercase tracking-widest mb-4 text-[var(--text-2)] text-center sm:text-left">
                     Contact
                 </h3>
 
@@ -136,7 +141,7 @@ export default function Contact() {
                                     <Link href={s.link} target="_blank">
                                         <Button
                                             variant="secondary"
-                                            className="cursor-pointer w-12 h-12 flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border-[var(--my-border)] rounded-full hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)] "
+                                            className="cursor-pointer w-12 h-12 flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-full hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)] "
                                         >
                                             {s.icon}
                                         </Button>

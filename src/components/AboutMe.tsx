@@ -34,14 +34,16 @@ export default function AboutMe() {
     const experience = calculateExperience(experienceStart);
 
     return (
-        <section className="
-      bg-[var(--bg-card)] text-[var(--text)] 
-      h-full
-      p-8 rounded-lg 
-      flex flex-col justify-center  lg:flex-row 
-      gap-10 lg:gap-20 
-      items-center lg:items-start
-      text-center lg:text-left
+        <div className="
+        bg-[var(--bg-card)] text-[var(--text)] 
+        border border-[var(--my-border)] rounded-lg
+        w-[90vw] h-[85vh] touch:w-[80vw] touch:h-[70vh] xl:w-[70vw] 2xl:w-[60vw]
+
+        flex flex-col justify-center  lg:flex-row 
+        gap-10 lg:gap-20 p-6 sm:p-8
+        items-center lg:items-start
+        text-center lg:text-left
+        
     ">
             {/* Left Content */}
             <div className="w-full lg:w-1/2">
@@ -108,6 +110,6 @@ export default function AboutMe() {
 
             <Socials />
 
-        </section>
+        </div>
     );
 }
