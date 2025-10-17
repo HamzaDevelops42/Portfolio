@@ -7,7 +7,7 @@ export default function Providers({ children }: { children: ReactNode }) {
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
-            themes={["light", "dark", "special"]}
+            themes={["light", "dark"]}
         >
             {children}
         </ThemeProvider>
