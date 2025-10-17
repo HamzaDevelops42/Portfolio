@@ -13,8 +13,9 @@
   --bg: #111111;
   --bg-card: #191919;
   --bg-button: #111111;
-  --bg-button-2: #393028;
   --bg-button-hover: #2A2A2A;
+  --bg-button-2: #393028;
+  --bg-button-2-hover: #332c26;
   --my-border: #282723;
   --text-bold: #eeeeee;
   --text: #b4b4b4;
@@ -57,29 +58,24 @@
 }
 
 .light {
-  --bg: #f9f9f9;
-  --bg-card: #ffffff;
+  --bg: #F9F9F9;
+  --bg-card: #fcfcfc;
   --bg-button: #f9f9f9;
-  --bg-button-hover: #E8E8E8;
+  --bg-button-hover: #e8e8e8;
   --my-border: #d8d8d8;
   --my-input: #d8d8d8;
   --text-bold: #202020;
   --text: #646464;
-  --nav-selected: : #ffdfb5;
+  --nav-selected: : #FFDFB5;
+
+
+  --bg-button-2: #ffdfb5;
+  --bg-button-2-hover: #eecfa7;
+
+  --text-2: #47281c;
 }
 
-.special {
-  /* KODAMA GROVE Light Mode */
-  --bg: #e4d7b0;
-  --bg-card: #e7dbbf;
-  --bg-button: #e4d7b0;
-  --bg-button-hover: #d9c693;
-  --my-border: #b19681;
-  --input: #dbc894;
-  --text-bold: #5c4b3e;
-  --text: #85766a;
-  --nav-selected: : #decea0;
-}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

@@ -84,7 +84,7 @@ export default function AboutMe() {
                 <p className="mt-6 leading-relaxed text-[var(--text-2)] max-sm:px-0 max-touch:px-14">
                     I'm a passionate self-taught developer who started coding at a young age.
                     I specialize in crafting modern, responsive, and scalable web applications
-                    using JavaScript, TypeScript, React, and Next.js. My goal is to build
+                    using TypeScript, Next.js and MongoDb. My goal is to build
                     innovative digital experiences while continuously learning and improving
                     my craft.
                 </p>
@@ -94,7 +94,7 @@ export default function AboutMe() {
                     <Link
                         href="#contact"
                         onClick={() => toast.success("Something went wrong. Try again!")}
-                        className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[#332B25] transition-colors cursor-pointer"
+                        className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)] transition-colors cursor-pointer"
                     >
                         Get in Touch
                     </Link>
