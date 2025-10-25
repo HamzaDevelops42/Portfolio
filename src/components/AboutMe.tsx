@@ -35,7 +35,7 @@ export default function AboutMe() {
 
     return (
         <div className="
-        bg-[var(--bg-card)] text-[var(--text)] 
+        bg-[var(--bg-card)]/30 text-[var(--text)] bg-clip-padding backdrop-filter backdrop-blur-md backdrop-saturate-100 backdrop-contrast-100
         border border-[var(--my-border)] rounded-lg
         w-[90vw] h-[85vh] touch:w-[80vw] touch:h-[70vh] xl:w-[70vw] 2xl:w-[60vw]
 

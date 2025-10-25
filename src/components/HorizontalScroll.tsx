@@ -115,7 +115,7 @@ export default function HorizontalScroll() {
     return (
         <div
             ref={containerRef}
-            className="touch:flex justify-center items-center h-screen w-[400vw] bg-[var(--bg)] overflow-hidden"
+            className="touch:flex justify-center items-center h-screen w-[400vw] overflow-hidden"
         >
             <section className="panel w-full h-full flex justify-center items-center">
                 <div className="card flex justify-center items-center h-full w-full">
