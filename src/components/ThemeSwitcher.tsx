@@ -2,6 +2,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi"
+import { ThemeToggleButton } from "./ui/skiper-ui/skiper26";
 
 export default function ThemeSwitcher() {
     const { theme, setTheme } = useTheme();
@@ -17,18 +18,21 @@ export default function ThemeSwitcher() {
 
             className="fixed top-4 right-4 z-50 p-2 bg-gray-800 text-white rounded"
         >
-           <FiSun />
+            <FiSun />
         </button>;
     }
 
     return (
         <>
-            <button
+            {/* <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="fixed top-15 right-15 z-50 p-2  text-[var(--text)] cursor-none"
             >
                 {theme === "dark" ? (<FiSun className="size-8" />) : <FiMoon className="size-8" />}
-            </button>
+            </button> */}
+            <div className="fixed top-15 right-15 z-50 p-2  text-[var(--text)] cursor-none">
+                <ThemeToggleButton variant="rectangle" start="left-right" className="cursor-none" blur={true}/>
+                </div>
         </>
     );
 }
