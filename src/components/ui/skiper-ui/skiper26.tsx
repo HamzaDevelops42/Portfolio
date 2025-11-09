@@ -596,8 +596,8 @@ export const ThemeToggleButton = ({
     <button
       type="button"
       className={cn(
-        "size-10 cursor-none rounded-full bg-black p-0 transition-all duration-300 active:scale-95",
-         isDark ? "bg-[var(--bg)] text-white" : "bg-white text-black",
+        "size-10 cursor-none rounded-full  p-0 transition-all duration-300 active:scale-95",
+        
         className,
       )}
       onClick={toggleTheme}

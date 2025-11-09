@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/tooltip";
 import emailjs from "@emailjs/browser";
 import { data } from "motion/react-client";
+import { Loader2 } from "lucide-react";
 
 export default function Contact() {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -129,7 +130,7 @@ export default function Contact() {
                             disabled={loading}
                             className="px-10 sm:px-20 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)]  transition-colors cursor-none text-center mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            {loading ? "Sending..." : "Send Message"}
+                            {loading ? <Loader2 className="animate-spin"/> : "Send Message" }
                         </button>
                     </form>
 

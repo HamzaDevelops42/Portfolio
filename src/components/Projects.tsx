@@ -28,7 +28,7 @@ const projects = [
         description:
             "A dynamic personal portfolio featuring smooth GSAP animations, horizontal scrolling, and modern UI components — built to showcase my projects, skills, and creativity.",
         image: "/portfolio.png",
-        tech: ["Next.js", "TailwindCSS", "GSAP", "Framer Motion"],
+        tech: ["Next.js", "TailwindCSS", "GSAP", "Framer Motion", "TypeScript"],
         github: "https://github.com/HamzaDevelops42/portfolio",
         demo: "https://hamzadevelops.vercel.app",
     },
@@ -65,7 +65,7 @@ export default function Projects() {
                                     alt={p.title}
                                     fill
                                     quality={100} // better quality
-                                    className="object-cover scale-110" // zoom + align left
+                                    className="object-cover scale-110 object-left" // zoom + align left
                                     sizes="1000px" // ensures sharpness for small fixed image boxes
                                     priority={i === 0} // optional: loads first project faster
                                 />
