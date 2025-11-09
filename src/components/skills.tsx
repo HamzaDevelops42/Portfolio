@@ -95,7 +95,7 @@ export default function Skills() {
                                         <Tooltip key={skill.name}>
                                             <TooltipTrigger asChild>
                                                 <Card
-                                                    className="group bg-[var(--bg-button)]/30 text-[var(--text)] border-[var(--my-border)]   bg-clip-padding backdrop-filter backdrop-blur-md backdrop-saturate-100 backdrop-contrast-100
+                                                    className="group custom bg-[var(--bg-button)]/30 text-[var(--text)] border-[var(--my-border)]   bg-clip-padding backdrop-filter backdrop-blur-md backdrop-saturate-100 backdrop-contrast-100
                                                                 flex items-center justify-center 
                                                                 h-17 w-17 sm:h-19 sm:w-19
                                                                 cursor-none transition-all duration-200 

@@ -17,7 +17,7 @@ const Skiper26 = () => {
   );
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center">
+    <div className="relative flex h-full w-full flex-col items-center justify-center cursor-none">
       <div className="mx-auto max-w-lg space-y-5">
         <h2 className="mt-36 text-4xl font-medium tracking-tight">
           07.09.2025 <br />

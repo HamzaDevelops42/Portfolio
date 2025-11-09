@@ -1,10 +1,12 @@
 "use client"
+import AnimatedCursor from "@/components/AnimatedCursor";
 import HorizontalScroll from "@/components/HorizontalScroll";
 import LightRays from "@/components/LightRays";
 import LiquidEther from "@/components/LiquidEther";
 import { Navbar } from "@/components/Navbar";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useTheme } from "next-themes";
 
 export default function Page() {
 
@@ -16,6 +18,7 @@ export default function Page() {
     x.set(e.clientX);
     y.set(e.clientY);
   };
+    const { theme, setTheme } = useTheme();
 
 
 
@@ -33,15 +36,38 @@ export default function Page() {
 
       className="overflow-hidden bg-[var(--bg)] cursor-none"
     >
+      
 
-      <motion.div
+     <AnimatedCursor
+      innerSize={8}
+      outerSize={8}
+      color="31, 111, 116"
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={5}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+        ".custom"
+      ]}
+    />
+      {/* <motion.div
         style={{
           x,
           y,
           opacity,
         }}
         className="fixed top-0 left-0 z-[9999] size-5 rounded-full bg-[#ccc] pointer-events-none"
-      ></motion.div>
+      ></motion.div> */}
 
       {/* <Navbar /> */}
       <ThemeSwitcher />
