@@ -25,7 +25,7 @@ export default function ThemeSwitcher() {
         <>
             <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="fixed top-15 right-15 z-50 p-2  text-[var(--text)] cursor-pointer"
+                className="fixed top-15 right-15 z-50 p-2  text-[var(--text)] cursor-none"
             >
                 {theme === "dark" ? (<FiSun className="size-8" />) : <FiMoon className="size-8" />}
             </button>

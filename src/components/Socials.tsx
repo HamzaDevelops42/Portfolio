@@ -43,7 +43,7 @@ export default function Social() {
                         <a href={socials[0].link} target="_blank" rel="noopener noreferrer">
                             <Button
                                 variant="secondary"
-                                className="cursor-pointer w-24 h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
+                                className="cursor-none w-24 h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
                             >
                                 {socials[0].icon}
                             </Button>
@@ -65,7 +65,7 @@ export default function Social() {
                                     <a href={socials[1].link} target="_blank" rel="noopener noreferrer">
                                         <Button
                                             variant="secondary"
-                                            className="cursor-pointer w-26 h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
+                                            className="cursor-none w-26 h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
                                         >
                                             {socials[1].icon}
                                         </Button>
@@ -82,7 +82,7 @@ export default function Social() {
                                     <a href={socials[2].link} target="_blank" rel="noopener noreferrer">
                                         <Button
                                             variant="secondary"
-                                            className="cursor-pointer w-26 h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
+                                            className="cursor-none w-26 h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
                                         >
                                             {socials[2].icon}
                                         </Button>
@@ -101,7 +101,7 @@ export default function Social() {
                                 <a href={socials[3].link} target="_blank" rel="noopener noreferrer">
                                     <Button
                                         variant="secondary"
-                                        className="cursor-pointer w-full h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
+                                        className="cursor-none w-full h-full flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)]"
                                     >
                                         {socials[3].icon}
                                     </Button>

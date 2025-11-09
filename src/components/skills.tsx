@@ -98,7 +98,7 @@ export default function Skills() {
                                                     className="group bg-[var(--bg-button)]/30 text-[var(--text)] border-[var(--my-border)]   bg-clip-padding backdrop-filter backdrop-blur-md backdrop-saturate-100 backdrop-contrast-100
                                                                 flex items-center justify-center 
                                                                 h-17 w-17 sm:h-19 sm:w-19
-                                                                cursor-pointer transition-all duration-200 
+                                                                cursor-none transition-all duration-200 
                                                                 hover:-translate-y-1 hover:scale-105"
                                                 >
                                                     <div

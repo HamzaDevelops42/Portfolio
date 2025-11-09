@@ -98,7 +98,7 @@ export default function Contact() {
                             value={form.name}
                             onChange={handleChange}
                             required
-                            className="w-full px-3 py-2 rounded-lg bg-[var(--bg-button)] border border-[var(--my-border)] text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--text)]"
+                            className="w-full px-3 py-2 cursor-none rounded-lg bg-[var(--bg-button)] border border-[var(--my-border)] text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--text)]"
                         />
 
                         {/* Email */}
@@ -109,7 +109,7 @@ export default function Contact() {
                             value={form.email}
                             onChange={handleChange}
                             required
-                            className=" w-full px-3 py-2 rounded-lg bg-[var(--bg-button)] border border-[var(--my-border)] text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--text)]"
+                            className=" w-full px-3 py-2 cursor-none rounded-lg bg-[var(--bg-button)] border border-[var(--my-border)] text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--text)]"
                         />
 
                         {/* Message */}
@@ -120,14 +120,14 @@ export default function Contact() {
                             value={form.message}
                             onChange={handleChange}
                             required
-                            className="w-full px-3 py-2 rounded-lg bg-[var(--bg-button)] border border-[var(--my-border)] text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--text)] resize-none"
+                            className="w-full px-3 py-2 cursor-none rounded-lg bg-[var(--bg-button)] border border-[var(--my-border)] text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--text)] resize-none"
                         />
 
                         {/* Submit Button */}
                         <button
                             type="submit"
                             disabled={loading}
-                            className="px-10 sm:px-20 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)]  transition-colors cursor-pointer text-center mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-10 sm:px-20 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)]  transition-colors cursor-none text-center mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {loading ? "Sending..." : "Send Message"}
                         </button>
@@ -141,7 +141,7 @@ export default function Contact() {
                                     <Link href={s.link} target="_blank">
                                         <Button
                                             variant="secondary"
-                                            className="cursor-pointer w-12 h-12 flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-full hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)] "
+                                            className="cursor-none w-12 h-12 flex items-center justify-center bg-[var(--bg-button)] text-[var(--text)] border border-[var(--my-border)] rounded-full hover:bg-[var(--bg-button-hover)] transition-colors hover:text-[var(--bg-button)] "
                                         >
                                             {s.icon}
                                         </Button>

@@ -94,13 +94,13 @@ export default function AboutMe() {
                     <Link
                         href="#contact"
                         onClick={() => toast.success("Something went wrong. Try again!")}
-                        className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)] transition-colors cursor-pointer"
+                        className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)] transition-colors cursor-none"
                     >
                         Get in Touch
                     </Link>
                     <Link
                         href="#projects"
-                        className="bg-[var(--bg-button)] text-[var(--text)] px-6 py-3 border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors cursor-pointer"
+                        className="bg-[var(--bg-button)] text-[var(--text)] px-6 py-3 border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors cursor-none"
                     >
                         View Projects
                     </Link>

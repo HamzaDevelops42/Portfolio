@@ -55,7 +55,7 @@ export default function Projects() {
                         onClick={() => window.open(mainLink, "_blank")}
                         className="bg-[var(--bg-button)]/30 bg-clip-padding backdrop-filter backdrop-blur-md backdrop-saturate-100 backdrop-contrast-100 border border-[var(--my-border)] rounded-2xl 
                                     p-4 flex flex-col sm:flex-row items-start sm:items-center 
-                                    gap-4 hover:-translate-y-1 transition-transform duration-200 cursor-pointer"
+                                    gap-4 hover:-translate-y-1 transition-transform duration-200 cursor-none"
                     >
                         {/* Image — hidden below 1024px (touch) */}
                         <div className="hidden touch:flex w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden border border-[var(--my-border)]">
