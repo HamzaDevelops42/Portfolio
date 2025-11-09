@@ -4,7 +4,6 @@ import Socials from "./Socials";
 import { FaCode, FaRegCalendarAlt, FaRegUser } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import Link from "next/link";
-import { toast } from "sonner";
 
 const birthday = new Date("2008-11-8");
 const experienceStart = new Date("2024-06-01");
@@ -92,17 +91,18 @@ export default function AboutMe() {
                 {/* Buttons */}
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <Link
-                        href="#contact"
-                        onClick={() => toast.success("Something went wrong. Try again!")}
+                        href="mailto:hamzadevelops42@gmail.com"
+                        target="_blank"
                         className="px-6 py-3 bg-[var(--bg-button-2)] text-[var(--text-2)] rounded-md hover:bg-[var(--bg-button-2-hover)] transition-colors cursor-none"
                     >
                         Get in Touch
                     </Link>
                     <Link
-                        href="#projects"
+                        href="https://github.com/HamzaDevelops42"
+                        target="_blank"
                         className="bg-[var(--bg-button)] text-[var(--text)] px-6 py-3 border border-[var(--my-border)] rounded-md hover:bg-[var(--bg-button-hover)] transition-colors cursor-none"
                     >
-                        View Projects
+                        View GitHub
                     </Link>
                 </div>
             </div>

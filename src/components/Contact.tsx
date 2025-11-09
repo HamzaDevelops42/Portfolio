@@ -13,7 +13,6 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip";
 import emailjs from "@emailjs/browser";
-import { data } from "motion/react-client";
 import { Loader2 } from "lucide-react";
 
 export default function Contact() {
@@ -47,7 +46,7 @@ export default function Contact() {
                 toast.error("Something went wrong. Try again!")
             }
         } catch (err) {
-            toast.error("Failed to send message. Please try later.",)
+            toast.error("Failed to send message. Please try later.")
         } finally {
             setLoading(false);
         }

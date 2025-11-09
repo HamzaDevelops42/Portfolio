@@ -2,11 +2,8 @@
 import AnimatedCursor from "@/components/AnimatedCursor";
 import HorizontalScroll from "@/components/HorizontalScroll";
 import LightRays from "@/components/LightRays";
-import LiquidEther from "@/components/LiquidEther";
-import { Navbar } from "@/components/Navbar";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useTheme } from "next-themes";
+import {  useMotionValue } from "framer-motion";
 
 export default function Page() {
 
@@ -18,7 +15,6 @@ export default function Page() {
     x.set(e.clientX);
     y.set(e.clientY);
   };
-    const { theme, setTheme } = useTheme();
 
 
 
