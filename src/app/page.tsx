@@ -3,36 +3,14 @@ import AnimatedCursor from "@/components/AnimatedCursor";
 import HorizontalScroll from "@/components/HorizontalScroll";
 import LightRays from "@/components/LightRays";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
-import {  useMotionValue } from "framer-motion";
 
 export default function Page() {
 
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const opacity = useMotionValue(0);
-
-  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement> | React.PointerEvent<HTMLElement>) => {
-    x.set(e.clientX);
-    y.set(e.clientY);
-  };
-
+  
 
 
   return (
-    <main
-      onPointerMove={(e) => {
-        handlePointerMove(e);
-      }}
-      onPointerEnter={() => {
-        opacity.set(1);
-      }}
-      onPointerLeave={() => {
-        opacity.set(0);
-      }}
-
-      className="overflow-hidden bg-[var(--bg)] cursor-none"
-    >
-      
+    <main className="overflow-hidden bg-[var(--bg)] cursor-none">
 
      <AnimatedCursor
       innerSize={8}
@@ -56,16 +34,7 @@ export default function Page() {
         ".custom"
       ]}
     />
-      {/* <motion.div
-        style={{
-          x,
-          y,
-          opacity,
-        }}
-        className="fixed top-0 left-0 z-[9999] size-5 rounded-full bg-[#ccc] pointer-events-none"
-      ></motion.div> */}
-
-      {/* <Navbar /> */}
+      
       <ThemeSwitcher />
 
       <div style={{ width: '100%', height: '100vh', position: 'fixed' }}>

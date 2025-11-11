@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Providers from "./providers";
 import { Toaster } from "@/components/ui/sonner"
+import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,6 +72,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} />
+
+
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}
       >
