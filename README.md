@@ -35,8 +35,8 @@ A modern, responsive, and animated **portfolio website** built with **Next.js**,
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/HamzaDevelops42/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/HamzaDevelops42/Portfolio.git
+cd Portfolio
 npm install
 ```
 
